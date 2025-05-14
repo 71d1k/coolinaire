@@ -1,0 +1,68 @@
+.recipe-list-container {
+  padding: 0 160px; /* Отступы по бокам */
+  background-color: #f8f8f8; /* Цвет фона */
+}
+
+.recipe-list-title {
+  color: #221d0b; /* Цвет заголовка */
+  font-size: 44px; /* Размер заголовка */
+  margin-bottom: 20px;
+  text-align: left; /* Выравнивание заголовка по левому краю */
+}
+
+.recipe-search-input {
+  width: 100%;
+  height: 40px; /* Высота поисковой строки */
+  padding: 0 20px;
+  border: 1px solid #d4d4d4; /* Обводка поисковой строки */
+  border-radius: 20px; /* Закругленные края */
+  background-color: #fefdfb; /* Цвет фона поисковой строки */
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left; /* Выравнивание текста в поисковой строке по левому краю */
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto; /* Центрируем сетку рецептов */
+  text-align: left; /* Выравнивание сетки рецептов по левому краю */
+}
+
+.recipe-card-link {
+  text-decoration: none; /* Убираем подчеркивание ссылки */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe-card-link .recipe-card {
+  border-radius: 10px; /* Закругленные края карточек */
+  overflow: hidden; /* Скрываем выступающие части изображения */
+}
+
+.recipe-card-link .recipe-card .recipe-title {
+  color: #221d0b; /* Цвет названия рецепта */
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) { /* Адаптив */
+  .recipe-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .recipe-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-list {
+    grid-template-columns: 1fr;
+  }
+}
