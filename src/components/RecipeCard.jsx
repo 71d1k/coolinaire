@@ -1,11 +1,13 @@
 import React from 'react';
+import '../styles/RecipeCard.css';
 
-const RecipeCard = ({ recipe }) => {
+const RecipeCard = ({ title, image }) => {
   return (
     <div className="recipe-card">
-      <h3>{recipe.title}</h3>
-      <img src={recipe.image} alt={recipe.title} />
-      <a href={recipe.link}>View Recipe</a>
+      <div className="recipe-image-container">
+        <img src={image} alt={title} />
+      </div>
+      <h3 className="recipe-title">{title}</h3>
     </div>
   );
 };

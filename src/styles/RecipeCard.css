@@ -1,0 +1,11 @@
+.recipe-card {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
