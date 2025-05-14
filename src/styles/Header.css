@@ -1,0 +1,59 @@
+/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne:wght@400..800&display=swap');
+
+/* Стили для шапки */
+.header {
+  height: 80px; /* Высота шапки */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px; /* Боковые отступы шапки */
+  background-color: #f8f8f8; /* Цвет фона шапки */
+  position: fixed; /* Фиксированное положение шапки */
+  top: 0; /* Прикрепление к верху страницы */
+  left: 0; /* Прикрепление к левому краю страницы */
+  right: 0; /* Прикрепление к правому краю страницы */
+  z-index: 100; /* Приоритет отображения шапки */
+  transition: transform 0.3s ease-in-out; /* Анимация скрытия/показа шапки */
+}
+
+/* Стили для шапки при прокрутке страницы */
+.header.scrolled {
+  transform: translateY(-100%); /* Скрытие шапки при прокрутке */
+}
+
+/* Стили для логотипа в шапке */
+.header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Убираем подчеркивание ссылки */
+  color: #221d0b; /* Цвет логотипа */
+}
+
+/* Стили для навигации в шапке */
+.header nav {
+  margin-left: 50px; /* Отступ навигации от логотипа */
+}
+
+/* Стили для ссылок навигации */
+.header nav .nav-link {
+  margin-left: 50px; /* Отступ между ссылками навигации */
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: #221d0b; /* Цвет ссылок навигации */
+  font-family: "Inter", sans-serif; /* Шрифт ссылок */
+}
+
+/* Стили для первой ссылки навигации */
+.header nav .nav-link:first-child {
+  margin-left: 0; /* Убираем отступ для первой ссылки */
+}
+
+/* Стили для текста с большим размером шрифта */
+span {
+  font-size: 30px; /* Размер шрифта */
+  font-weight: 800; /* Жирное начертание */
+  color: #221d0b; /* Цвет текста */
+  font-family: "Inter", sans-serif; /* Шрифт текста */
+  line-height: 1; /* Межстрочный интервал */
+  letter-spacing: 0px; /* Межбуквенный интервал */
+}
