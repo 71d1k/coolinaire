@@ -64,7 +64,7 @@ const RecipePage = () => {
 
   return (
     <div className="recipe-page-container">
-      <div className="recipe-image-container">
+      <div className="recipe-page-image-container">
         {recipeImage && <img src={recipeImage} alt={recipe.title} />}
         <div className="recipe-info">
           <h1>{recipe.title}</h1>
