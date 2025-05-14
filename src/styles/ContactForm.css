@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Контейнер формы обратной связи */
+.contact-form-container {
+  padding: 0 160px; /* Горизонтальные отступы контейнера */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Высота контейнера на всю высоту viewport */
+  background-color: #f8f8f8; /* Цвет фона */
+  font-family: 'Inter', sans-serif; /* Шрифт */
+  font-size: 16px; /* Размер шрифта */
+}
+
+/* Обертка формы обратной связи */
+.contact-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Максимальная ширина обертки */
+  padding: 50px; /* Отступы обертки */
+}
+
+/* Контент формы обратной связи */
+.contact-form-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Заголовок формы обратной связи */
+.contact-form-title {
+  font-size: 44px; /* Размер шрифта заголовка */
+  font-weight: bold;
+  margin-bottom: 30px; /* Нижний отступ заголовка */
+  color: #221d0b; /* Цвет заголовка */
+}
+
+/* Правая часть обертки формы обратной связи */
+.contact-form-wrapper-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Форма обратной связи */
+.contact-form.rounded-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px; /* Максимальная ширина формы */
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 30px; /* Скругленные углы формы */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Тень формы */
+}
+
+/* Ряд формы */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px; /* Горизонтальный отступ между полями ввода */
+}
+
+/* Поля ввода в ряду формы */
+.form-row .rounded-input {
+  width: 48%; /* Ширина каждого поля ввода */
+  border-radius: 20px; /* Скругленные углы полей ввода */
+}
+
+/* Поля ввода и текстовая область формы обратной связи */
+.contact-form .rounded-input,
+.contact-form .rounded-textarea {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Граница полей ввода и текстовой области */
+  border-radius: 20px; /* Скругленные углы полей ввода и текстовой области */
+  margin-bottom: 20px; /* Нижний отступ полей ввода и текстовой области */
+  font-family: 'Inter', sans-serif; /* Шрифт */
+}
+
+/* Текстовая область формы обратной связи */
+.contact-form .rounded-textarea {
+  height: 120px;
+  resize: none; /* Отключение изменения размера текстовой области */
+}
+
+/* Кнопка отправки */
+.submit-button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #221d0b; /* Цвет фона кнопки отправки */
+  color: #fff; /* Цвет текста кнопки отправки */
+  border: none;
+  border-radius: 20px; /* Скругленные углы кнопки отправки */
+  cursor: pointer; /* Курсор при наведении */
+  font-family: 'Inter', sans-serif; /* Шрифт */
+}
+
+/* Кнопка отправки при наведении */
+.submit-button:hover {
+  background-color: #3a3225; /* Цвет фона кнопки при наведении */
+}
