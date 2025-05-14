@@ -22,10 +22,14 @@
   text-align: left; /* Выравнивание текста в поисковой строке по левому краю */
 }
 
+.recipe-search-input::placeholder {
+  font-family: 'Inter', sans-serif;
+}
+
 .recipe-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 16px;
   padding: 20px 0;
   max-width: 1200px;
   margin: 0 auto; /* Центрируем сетку рецептов */
